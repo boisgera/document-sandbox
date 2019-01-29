@@ -4,34 +4,37 @@ Document Sandbox
 Development Environment
 --------------------------------------------------------------------------------
 
+To simplify the management of software tools required to work on the project,
+the [conda](https://conda.io/en/latest/) package & environment manager is used.
 
+If you don't have it already, you may install
+[miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
-https://git-scm.com/
+### Conda Quickstart
 
-Since ... all the tooling required to 
+**Reference:** [Managing environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
-[conda](https://conda.io/en/latest/)
-
-[Managing environments]
-(https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+The `environment.yml` file lists the project software requirements.
+To create a conda environment that matches this specification, execute:
 
     $ conda env create -f environment.yml
+
+and to activate it:
+
     $ conda activate document-sandbox
 
-The command prompt shows that the environment is activated:
+The command prompt now shows that the environment is activated:
 
     (document-sandbox) $
 
 To get back to normal when you're done working on the project,
-deactivate the environment:
+deactivate the environment with the command `conda deactivate`.
 
-    (document-sandbox) $ conda deactivate
-
-If the `environment.yml` gets updated with new dependencies 
-and your version of the environment is outdate, you can update it
+If your version of the environment is outdated 
+(there is a new `environment.yml` file), update it
 
     $ conda env update -f enviroment.yml
 
-or remove the environment with `conda env remove --name document-sandbox`
-and start over.
+or remove it with `conda env remove --name document-sandbox`
+and start over the creation process.
 
