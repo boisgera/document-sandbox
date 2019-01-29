@@ -15,8 +15,8 @@ A few tools are necessary
   - The [conda](https://conda.io/en/latest/) package & environment manager.
 
 The latter is especially important since we use it to bootstrap 
-the installation of every other software dependency that we have,
-such as Python, Pandoc, etc. If you don't already have `conda` on your computer, 
+the installation of many extra software tools that we need,
+such as Python, Pandoc, etc. If you don't already have conda on your computer, 
 you may install [miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 Our extra software requirements are listed in the `environment.yml` file.
