@@ -1,0 +1,8 @@
+name: document-sandbox
+channels:
+  - conda-forge
+dependencies:
+  - python=2.7
+  - pandoc=2.5
+  - numpy
+  
