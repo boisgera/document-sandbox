@@ -1,2 +1,4 @@
 #!/bin/bash
 
+mkdir -p output
+pandoc -o output/document.pdf document.md
