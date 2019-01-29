@@ -4,37 +4,31 @@ Document Sandbox
 Development Environment
 --------------------------------------------------------------------------------
 
-To simplify the management of software tools required to work on the project,
-the [conda](https://conda.io/en/latest/) package & environment manager is used.
+A few tools are necessary
 
-If you don't have it already, you may install
-[miniconda](https://docs.conda.io/en/latest/miniconda.html).
+  - A [LaTeX](https://www.latex-project.org/) distribution,
 
-### Conda Quickstart
+  - The [git](https://git-scm.com/) version control system,
 
-**Reference:** [Managing environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+  - A text editor or IDE like [Visual Studio Code](https://code.visualstudio.com/),
 
-The `environment.yml` file lists the project software requirements.
-To create a conda environment that matches this specification, execute:
+  - The [conda](https://conda.io/en/latest/) package & environment manager.
+
+The latter is especially important since we use it to bootstrap 
+the installation of every other software dependency that we have,
+such as Python, Pandoc, etc. If you don't already have `conda` on your computer, 
+you may install [miniconda](https://docs.conda.io/en/latest/miniconda.html).
+
+Our extra software requirements are listed in the `environment.yml` file.
+To create a conda environment that matches this specification, 
+once and for all, execute:
 
     $ conda env create -f environment.yml
 
-and to activate it:
+Now, when you need to work on the project,
+activate the environment:
 
     $ conda activate document-sandbox
 
-The command prompt now shows that the environment is activated:
-
-    (document-sandbox) $
-
-To get back to normal when you're done working on the project,
-deactivate the environment with the command `conda deactivate`.
-
-If your version of the environment is outdated 
-(there is a new `environment.yml` file), update it
-
-    $ conda env update -f enviroment.yml
-
-or remove it with `conda env remove --name document-sandbox`
-and start over the creation process.
+Full reference: [Conda/Managing environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
