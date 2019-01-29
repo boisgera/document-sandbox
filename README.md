@@ -34,3 +34,5 @@ activate the environment:
 
 Full reference: [Conda/Managing environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
+
+**TODO:** document post-install
