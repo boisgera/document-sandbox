@@ -10,7 +10,9 @@ A few tools are necessary
 
   - The [git](https://git-scm.com/) version control system,
 
-  - A text editor or IDE like [Visual Studio Code](https://code.visualstudio.com/),
+  - A text editor, file explorer, terminal (bash), etc. 
+    or an an IDE like [Visual Studio Code](https://code.visualstudio.com/) 
+    that packages these things for you,
 
   - The [conda](https://conda.io/en/latest/) package & environment manager.
 
@@ -21,7 +23,7 @@ you may install [miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 Our extra software requirements are listed in the `environment.yml` file.
 To create a conda environment that matches this specification, 
-once and for all, execute:
+once and for all, execute in the terminal:
 
     $ conda env create -f environment.yml
 
