@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -rf tmp && mkdir tmp && cd tmp
+git clone https://github.com/boisgera/pandoc.git && cd pandoc
+git checkout 52bb30c51b61e674a8f0a2d316dcd3fd5c1c0224
+pip install --target=.lib --ignore-installed 'about>=5.1,<6'
+python setup.py install
