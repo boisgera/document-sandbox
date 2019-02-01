@@ -1,0 +1,25 @@
+[
+  {
+    "id": "Knuth92",
+    "type": "article-journal",
+    "title": "Two notes on notation.",
+    "container-title": "American Mathematical Monthly",
+    "page": "403–422",
+    "volume": "99",
+    "issue": "5",
+    "ISSN": "0002-9890",
+    "journalAbbreviation": "Am. Math. Mon.",
+    "language": "English",
+    "author": 
+      [
+        {
+          "family": "Knuth",
+          "given": "Donald E."
+        }
+      ],
+    "issued": 
+      {
+        "date-parts": [["1992"]]
+      }
+  }
+]

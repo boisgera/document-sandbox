@@ -2,9 +2,18 @@
 
 mkdir -p output
 
-pandoc -o output/document.pdf document.md
+# Shared Options
+OPT=(-V lang=fr) 
+OPT+=(--table-of-contents)
+OPT+=(--bibliography=bibliography/bibliography.json -M link-citations=true)
 
-pandoc -o output/document.odt document.md
+# PDF Output
+pandoc "${OPT[@]}" -o output/document.pdf document.md
 
-pandoc -s --css css/pandoc.css -o output/document.html document.md
+# ODT Output
+pandoc "${OPT[@]}" -o output/document.odt document.md
+
+# HTML Output
+HTML_OPT=(--standalone --mathjax --css css/pandoc.css)
+pandoc "${HTML_OPT[@]}" "${OPT[@]}" -o output/document.html document.md
 cp -rf css output

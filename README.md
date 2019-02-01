@@ -35,4 +35,12 @@ activate the environment:
 Full reference: [Conda/Managing environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 
-**TODO:** document post-install
+Building the Document
+--------------------------------------------------------------------------------
+
+In the project directory, activate the conda environment, 
+then execute the command
+
+    $ ./build
+
+PDF, HTML and ODT versions have been created in the `output` directory.
