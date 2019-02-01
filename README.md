@@ -35,12 +35,17 @@ activate the environment:
 Full reference: [Conda/Managing environments](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 
-Building the Document
+Edit/Build the Document
 --------------------------------------------------------------------------------
 
-In the project directory, activate the conda environment, 
-then execute the command
+In the project directory: 
 
-    $ ./build
+ 1. Edit the Markdown version `document.md` of the document,
+    its bibliography, etc.
 
-PDF, HTML and ODT versions have been created in the `output` directory.
+ 2. Then, execute the command
+
+        $ ./build
+
+    to create PDF, HTML and ODT versions of the document
+    in the `output` directory.
