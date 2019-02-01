@@ -1,4 +1,10 @@
 #!/bin/bash
 
 mkdir -p output
+
 pandoc -o output/document.pdf document.md
+
+pandoc -o output/document.odt document.md
+
+pandoc -s --css css/pandoc.css -o output/document.html document.md
+cp -rf css output.css
