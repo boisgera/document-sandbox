@@ -27,6 +27,8 @@ d'être largement configurable[^note-API].
 [DOM]: http://hackage.haskell.org/package/pandoc-types-1.19/docs/Text-Pandoc-Definition.html
 [R-MD]: https://bookdown.org/yihui/rmarkdown/markdown-syntax.html
 
+
+
 Bibliographie
 --------------------------------------------------------------------------------
 
@@ -82,6 +84,7 @@ Le résultat: "Ca donne toujours de la crédibilité de citer [@Knuth92]".
 Bac à Sable
 ================================================================================
 
+
 Section (niveau 2)
 --------------------------------------------------------------------------------
 
@@ -102,6 +105,19 @@ Liste:
   - ...
 
 --------------------------------------------------------------------------------
+
+Section "typée"
+--------------------------------------------------------------------------------
+
+### Théorème fondamental du calcul {.theorem}
+
+Pour toute fonction dérivable $f: [a,b] \to \mathbb{R}^m,$
+  
+  $$
+  f(b) = f(a) + \int_a^b f'(t) \, dt.
+  $$
+
+
 
 Bibliographie
 ================================================================================
